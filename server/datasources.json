@@ -1,0 +1,25 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysqlAWS": {
+    "host": "????.rds.amazonaws.com",
+    "port": 3306,
+    "database": "????",
+    "username": "????",
+    "password": "????",
+    "name": "mysqldb",
+    "connector": "mysql",
+    "connectionLimit": 3
+  },
+  "mysqlLB": {
+    "name": "mysqlDs",
+    "connector": "mysql",
+    "host": "demo.strongloop.com",
+    "port": 3306,
+    "database": "demo",
+    "username": "demo",
+    "password": "L00pBack"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Parent",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "idInjection": true,
+    "mysql": {
+      "schema": "edvisor_dev",
+      "table": "parent"
+    }
+  },
+  "properties": {
+    "parentId": {
+      "type": "number",
+      "required": false,
+      "id": 1,
+      "mysql": {
+        "columnName": "parent_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 11,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "children": {
+      "model": "Child",
+      "type": "embedsMany",
+      "foreignKey": "parentId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}
