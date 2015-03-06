@@ -31,7 +31,7 @@
   "relations": {
     "children": {
       "model": "Child",
-      "type": "embedsMany",
+      "type": "hasMany",
       "foreignKey": "parentId"
     }
   },
